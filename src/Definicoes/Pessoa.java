@@ -25,6 +25,10 @@ public class Pessoa {
     private int usuario;
     private int cargo;
     private int pet;
+    
+    public Pessoa(){
+        
+    }
 
    
     public String getNome() {
