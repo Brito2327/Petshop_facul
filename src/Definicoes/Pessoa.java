@@ -8,8 +8,6 @@ package Definicoes;
 
 import java.util.Date;
 
-
-
 /**
  *
  * @author alexander.brito
@@ -18,18 +16,17 @@ public class Pessoa {
    
     private String Nome;
     private String Cpf;
-    private Date DataAdmissao;
-    private Date DataDemissao;
+    private boolean ativo_pessoa;
     private int endereco;
     private int contato;
     private int usuario;
     private int cargo;
     private int pet;
     
+    
     public Pessoa(){
         
     }
-
    
     public String getNome() {
         return Nome;
@@ -49,27 +46,7 @@ public class Pessoa {
         this.Cpf = Cpf;
     }
 
-    
-    public Date getDataAdmissao() {
-        return DataAdmissao;
-    }
 
-    
-    public void setDataAdmissao(Date DataAdmissao) {
-        this.DataAdmissao = DataAdmissao;
-    }
-
-    
-    public Date getDataDemissao() {
-        return DataDemissao;
-    }
-
-    
-    public void setDataDemissao(Date DataDemissao) {
-        this.DataDemissao = DataDemissao;
-    }
-
-    
     public int getEndereco() {
         return endereco;
     }
