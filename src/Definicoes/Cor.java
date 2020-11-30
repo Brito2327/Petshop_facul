@@ -11,22 +11,34 @@ package Definicoes;
  */
 public class Cor {
 
-    public Cor(String cor) {
-        this.cor = cor;
-    }
+    private int idCor;
+    private String Nome;
 
     public Cor() {
     }
+
+    public Cor(int idCor, String Nome) {
+        this.idCor = idCor;
+        this.Nome = Nome;
+    }
+
+    public int getIdCor() {
+        return idCor;
+    }
+
+    public void setIdCor(int idCor) {
+        this.idCor = idCor;
+    }
+
+    public String getNome() {
+        return Nome;
+    }
+
+    public void setNome(String Nome) {
+        this.Nome = Nome;
+    }
     
-    private String cor;
-
-    public String getCor() {
-        return cor;
-    }
-
-    public void setCor(String cor) {
-        this.cor = cor;
-    }
+    
     
     
     

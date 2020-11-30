@@ -13,6 +13,7 @@ import java.util.Date;
  */
 public class Agendamentos {
     
+    private int idAgendamentos;
     private Date Data_hora;
     private int Pessoa;
     private int Pet;
@@ -20,10 +21,19 @@ public class Agendamentos {
     public Agendamentos() {
     }
 
-    public Agendamentos(Date Data_hora, int Pessoa, int Pet) {
+    public Agendamentos(int idAgendamentos, Date Data_hora, int Pessoa, int Pet) {
+        this.idAgendamentos = idAgendamentos;
         this.Data_hora = Data_hora;
         this.Pessoa = Pessoa;
         this.Pet = Pet;
+    }
+
+    public int getIdAgendamentos() {
+        return idAgendamentos;
+    }
+
+    public void setIdAgendamentos(int idAgendamentos) {
+        this.idAgendamentos = idAgendamentos;
     }
 
     public Date getData_hora() {
@@ -49,7 +59,8 @@ public class Agendamentos {
     public void setPet(int Pet) {
         this.Pet = Pet;
     }
-    
+
+ 
     
     
 }

@@ -11,6 +11,7 @@ package Definicoes;
  */
 public class servicos {
     
+    private int idservicos;
     private String Nome;
     private String Descricao;
     private float Valor;
@@ -18,12 +19,21 @@ public class servicos {
     public servicos() {
     }
 
-    public servicos(String Nome, String Descricao, float Valor) {
+    public servicos(int idservicos, String Nome, String Descricao, float Valor) {
+        this.idservicos = idservicos;
         this.Nome = Nome;
         this.Descricao = Descricao;
         this.Valor = Valor;
     }
-    
+
+    public int getIdservicos() {
+        return idservicos;
+    }
+
+    public void setIdservicos(int idservicos) {
+        this.idservicos = idservicos;
+    }
+
     public String getNome() {
         return Nome;
     }
@@ -47,6 +57,6 @@ public class servicos {
     public void setValor(float Valor) {
         this.Valor = Valor;
     }
-    
-    
+
+   
 }

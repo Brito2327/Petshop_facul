@@ -10,15 +10,25 @@ package Definicoes;
  * @author Evelyn
  */
 public class cidade {
+    
+    private int idcidade;
+    private String Nome;
 
     public cidade() {
     }
 
-    public cidade(String Nome) {
+    public cidade(int idcidade, String Nome) {
+        this.idcidade = idcidade;
         this.Nome = Nome;
     }
-    
-    private String Nome;
+
+    public int getIdcidade() {
+        return idcidade;
+    }
+
+    public void setIdcidade(int idcidade) {
+        this.idcidade = idcidade;
+    }
 
     public String getNome() {
         return Nome;
@@ -27,7 +37,5 @@ public class cidade {
     public void setNome(String Nome) {
         this.Nome = Nome;
     }
-    
-    
     
 }

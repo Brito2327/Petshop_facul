@@ -14,7 +14,7 @@ import java.sql.Date;
 public class Pet {
 
   
-    private int idPet; // deixar o id ou tirar?? 
+    private int idPet; 
     private String Nome;
     private boolean Sexo;
     private String Obs;
@@ -22,9 +22,14 @@ public class Pet {
     private int Tipo; // deixar este atributo? Não tem no banco de dados.
     private int Dono;
     private int Raca;
+
+    public Pet() {
+    }
     
     
-    public Pet(String nome,String Obs){
+    
+    public Pet(String nome,String Obs){ // não mexi mt nessa classe pq ela tava assim, 
+                                                // dai qlqr coisa eu altero mas vai que vc tava vendo algo entende.
         super();        
         this.Nome = nome;
        // this.dataNasc = dataNasc;

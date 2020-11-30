@@ -8,16 +8,26 @@ import java.util.Date;
  * @author Evelyn
  */
 public class Horarios {
-    
-   private Date Horario; //não criei o id, precisa? 
+   
+   private int idHorarios; 
+   private Date Horario;
    private String Pessoa;
 
     public Horarios() {
     }
 
-    public Horarios(Date Horario, String Pessoa) {
+    public Horarios(int idHorarios, Date Horario, String Pessoa) {
+        this.idHorarios = idHorarios;
         this.Horario = Horario;
         this.Pessoa = Pessoa;
+    }
+
+    public int getIdHorarios() {
+        return idHorarios;
+    }
+
+    public void setIdHorarios(int idHorarios) {
+        this.idHorarios = idHorarios;
     }
 
     public Date getHorario() {
@@ -35,6 +45,6 @@ public class Horarios {
     public void setPessoa(String Pessoa) {
         this.Pessoa = Pessoa;
     }
-   
+
    
 }

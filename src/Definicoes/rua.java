@@ -11,15 +11,25 @@ package Definicoes;
  */
 public class rua {
     
+    private int idrua;
     private String nome;
     private String bairro;
 
     public rua() {
     }
 
-    public rua(String nome, String bairro) {
+    public rua(int idrua, String nome, String bairro) {
+        this.idrua = idrua;
         this.nome = nome;
         this.bairro = bairro;
+    }
+
+    public int getIdrua() {
+        return idrua;
+    }
+
+    public void setIdrua(int idrua) {
+        this.idrua = idrua;
     }
 
     public String getNome() {
@@ -37,7 +47,6 @@ public class rua {
     public void setBairro(String bairro) {
         this.bairro = bairro;
     }
-    
-    
+
     
 }

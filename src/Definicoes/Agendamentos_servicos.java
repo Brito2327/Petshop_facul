@@ -11,17 +11,26 @@ package Definicoes;
  */
 public class Agendamentos_servicos { //esta classe é uma associativa, criei, mas se não for necessária excluo.
     
+    private int idAgendamentos_servicos;
     private int servico;
     private int agendamentos;
 
     public Agendamentos_servicos() {
     }
 
-    public Agendamentos_servicos(int servico, int agendamentos) {
+    public Agendamentos_servicos(int idAgendamentos_servicos, int servico, int agendamentos) {
+        this.idAgendamentos_servicos = idAgendamentos_servicos;
         this.servico = servico;
         this.agendamentos = agendamentos;
     }
-    
+
+    public int getIdAgendamentos_servicos() {
+        return idAgendamentos_servicos;
+    }
+
+    public void setIdAgendamentos_servicos(int idAgendamentos_servicos) {
+        this.idAgendamentos_servicos = idAgendamentos_servicos;
+    }
 
     public int getServico() {
         return servico;
@@ -38,7 +47,7 @@ public class Agendamentos_servicos { //esta classe é uma associativa, criei, ma
     public void setAgendamentos(int agendamentos) {
         this.agendamentos = agendamentos;
     }
-    
+
     
     
 }

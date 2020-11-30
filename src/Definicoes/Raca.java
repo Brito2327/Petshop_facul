@@ -10,23 +10,35 @@ package Definicoes;
  * @author Evelyn
  */
 public class Raca {
+    
+    private int idRaca;
+    private String Nome;
 
     public Raca() {
     }
 
-    public Raca(String cor) {
-        this.cor = cor;
+    public Raca(int idRaca, String Nome) {
+        this.idRaca = idRaca;
+        this.Nome = Nome;
     }
+
+    public int getIdRaca() {
+        return idRaca;
+    }
+
+    public void setIdRaca(int idRaca) {
+        this.idRaca = idRaca;
+    }
+
+    public String getNome() {
+        return Nome;
+    }
+
+    public void setNome(String Nome) {
+        this.Nome = Nome;
+    }
+
     
-    private String cor;
-
-    public String getCor() {
-        return cor;
-    }
-
-    public void setCor(String cor) {
-        this.cor = cor;
-    }
     
     
     

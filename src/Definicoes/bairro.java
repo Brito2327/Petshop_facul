@@ -11,16 +11,26 @@ package Definicoes;
  */
 public class bairro {
     
+    private int idbairro;
     private String Nome;
     private int cidade;
 
     public bairro() {
     }
 
-    public bairro(String Nome, int cidade) {
+    public bairro(int idbairro, String Nome, int cidade) {
+        this.idbairro = idbairro;
         this.Nome = Nome;
         this.cidade = cidade;
-    } 
+    }
+
+    public int getIdbairro() {
+        return idbairro;
+    }
+
+    public void setIdbairro(int idbairro) {
+        this.idbairro = idbairro;
+    }
 
     public String getNome() {
         return Nome;
@@ -37,6 +47,7 @@ public class bairro {
     public void setCidade(int cidade) {
         this.cidade = cidade;
     }
+
     
     
     

@@ -11,6 +11,7 @@ package Definicoes;
  */
 public class endereco {
     
+    private int idendereco;
     private int Cep;
     private int Numero_casa;
     private String Complemento;
@@ -19,11 +20,20 @@ public class endereco {
     public endereco() {
     }
 
-    public endereco(int Cep, int Numero_casa, String Complemento, int rua) {
+    public endereco(int idendereco, int Cep, int Numero_casa, String Complemento, int rua) {
+        this.idendereco = idendereco;
         this.Cep = Cep;
         this.Numero_casa = Numero_casa;
         this.Complemento = Complemento;
         this.rua = rua;
+    }
+
+    public int getIdendereco() {
+        return idendereco;
+    }
+
+    public void setIdendereco(int idendereco) {
+        this.idendereco = idendereco;
     }
 
     public int getCep() {
@@ -57,7 +67,7 @@ public class endereco {
     public void setRua(int rua) {
         this.rua = rua;
     }
-    
-    
+
+   
     
 }
