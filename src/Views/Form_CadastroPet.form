@@ -98,8 +98,8 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="nomeText" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="obslabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                      <Component id="nomeText" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="obslabel" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -108,7 +108,7 @@
                   </Group>
                   <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                   <Component id="btnsalvar" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="31" max="32767" attributes="0"/>
+                  <EmptySpace pref="21" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -120,6 +120,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="nomeText">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="obslabel">
           <Properties>

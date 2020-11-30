@@ -40,7 +40,7 @@ public class Form_Login extends javax.swing.JFrame {
 
         painelPrincipal.setLayout(null);
         painelPrincipal.add(jPasswordField1);
-        jPasswordField1.setBounds(70, 110, 110, 20);
+        jPasswordField1.setBounds(70, 110, 150, 20);
 
         LabelUsuario.setText("Usúario");
         painelPrincipal.add(LabelUsuario);
@@ -59,11 +59,13 @@ public class Form_Login extends javax.swing.JFrame {
         painelPrincipal.add(Entrar);
         Entrar.setBounds(90, 140, 63, 23);
         painelPrincipal.add(usuario);
-        usuario.setBounds(70, 80, 110, 20);
+        usuario.setBounds(70, 80, 150, 20);
 
         fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/banhoetosa2.jpg"))); // NOI18N
+        fundo.setName("Teste"); // NOI18N
         painelPrincipal.add(fundo);
         fundo.setBounds(0, 0, 480, 320);
+        fundo.getAccessibleContext().setAccessibleName("Acesso");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
