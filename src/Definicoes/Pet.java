@@ -14,16 +14,22 @@ import java.sql.Date;
 public class Pet {
 
   
-    private int idPet;
+    private int idPet; 
     private String Nome;
-    private Date dataNasc;
+    private boolean Sexo;
     private String Obs;
-    private int Tipo;
-    private int Sexo;
-    private int Raca;
+    private Date dataNasc;
+    private int Tipo; // deixar este atributo? Não tem no banco de dados.
     private int Dono;
+    private int Raca;
+
+    public Pet() {
+    }
     
-    public Pet(String nome,String Obs){
+    
+    
+    public Pet(String nome,String Obs){ // não mexi mt nessa classe pq ela tava assim, 
+                                                // dai qlqr coisa eu altero mas vai que vc tava vendo algo entende.
         super();        
         this.Nome = nome;
        // this.dataNasc = dataNasc;
@@ -107,14 +113,14 @@ public class Pet {
     /**
      * @return the Sexo
      */
-    public int getSexo() {
+    public boolean getSexo() {
         return Sexo;
     }
 
     /**
      * @param Sexo the Sexo to set
      */
-    public void setSexo(int Sexo) {
+    public void setSexo(boolean Sexo) {
         this.Sexo = Sexo;
     }
 

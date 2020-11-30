@@ -11,6 +11,7 @@ package Definicoes;
  */
 public class Usuario {
     
+    private int idusuarios;
     private String login;
     private String senha;
     
@@ -18,23 +19,37 @@ public class Usuario {
         
     }
 
-    public Usuario(String login,String senha){
-        this.senha = senha;
+    public Usuario(int idusuarios, String login, String senha) {
+        this.idusuarios = idusuarios;
         this.login = login;
+        this.senha = senha;
+    }
+
+    public int getIdusuarios() {
+        return idusuarios;
+    }
+
+    public void setIdusuarios(int idusuarios) {
+        this.idusuarios = idusuarios;
     }
 
     public String getLogin() {
         return login;
-    }    
+    }
+
     public void setLogin(String login) {
         this.login = login;
-    }    
+    }
+
     public String getSenha() {
         return senha;
-    } 
+    }
+
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
+    
     
     
 }
